@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d1a;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+   font-family: 'Space Grotesk', sans-serif;
+   color: #00E5FF; /* text-brand-blue */
+   font-size: 2.25rem; /* Equivalent to text-4xl */
+   margin-bottom: 2rem;
+}
+
+/* Header and Navigation */
+.site-header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(13, 13, 26, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.site-header .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: none; /* Hidden on mobile */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #00E5FF; /* text-brand-blue */
+}
+
+.main-nav .apply-button {
+    background-color: #FF007A; /* bg-brand-pink */
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: bold;
+}
+ .main-nav .apply-button:hover {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 5rem 0;
+}
+
+.hero-section h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3.75rem; /* text-6xl */
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.6), 0 0 16px rgba(0, 229, 255, 0.4); /* text-glow */
+}
+
+.hero-section p {
+    font-size: 1.125rem; /* text-lg */
+    color: #d1d5db; /* text-gray-300 */
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about-section .grid-container {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-section p {
+    color: #d1d5db; /* text-gray-300 */
+}
+
+.about-section img {
+    width: 100%;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Trainees Section */
+.trainees-section {
+    text-align: center;
+}
+.trainees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+.trainee-card {
+    background-color: rgba(31, 41, 55, 0.4);
+    border-radius: 0.75rem;
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.trainee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 229, 255, 0.1);
+}
+.trainee-card img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 4px solid;
+}
+.trainee-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+.trainee-card p {
+    color: #d1d5db;
+}
+
+/* Testimonies Section */
+.testimonies-section .heading {
+    font-family: 'Damion', cursive; /* Funky font */
+    font-size: 3rem; /* text-5xl */
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+.testimonies-section .grid-container {
+    display: grid;
+    gap: 2rem;
+}
+.testimonial-card {
+    background-color: rgba(31, 41, 55, 0.4); /* bg-gray-800 bg-opacity-40 */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.testimonial-card img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 9999px;
+    margin: 0 auto 1rem;
+    border: 2px solid #00E5FF;
+}
+.testimonial-card .quote {
+    color: #d1d5db; /* text-gray-300 */
+    font-style: italic;
+}
+.testimonial-card .author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #00E5FF; /* text-brand-blue */
+}
+
+/* Jobs Section */
+.job-listing {
+    background-color: rgba(31, 41, 55, 0.4);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.job-listing h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ .job-listing p {
+    color: #9ca3af; /* text-gray-400 */
+}
+.job-listing .apply-button {
+     background-color: #FF007A;
+     color: #ffffff;
+     font-weight: bold;
+     padding: 0.5rem 1.5rem;
+     border-radius: 9999px;
+     text-decoration: none;
+     transition: opacity 0.3s;
+     margin-top: 1rem;
+}
+ .job-listing .apply-button:hover {
+    opacity: 0.9;
+}
+
+/* Courses Section */
+.courses-section ul {
+    list-style: none;
+}
+.courses-section li a {
+    display: block;
+    background-color: rgba(31, 41, 55, 0.4);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, background-color 0.3s;
+    border-left: 5px solid #FF007A;
+}
+.courses-section li a:hover {
+    background-color: rgba(31, 41, 55, 0.8);
+    transform: translateX(10px);
+    color: #00E5FF;
+}
+
+
+/* UPDATED Apply Section */
+.application-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(31, 41, 55, 0.4);
+    padding: 2rem;
+    border-radius: 0.75rem;
+}
+.application-form label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.application-form input,
+.application-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    background-color: rgba(13, 13, 26, 0.8);
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+.application-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+.application-form button {
+    background-color: #FF007A;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+.application-form button:hover {
+    opacity: 0.9;
+}
+#formMessage {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#formMessage.success {
+    color: #34d399; /* A nice green color for success */
+}
+#formMessage.error {
+    color: #f87171; /* A red color for errors */
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #4b5563; /* border-gray-700 */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    /* Show nav on medium screens and up */
+    .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-section {
+        text-align: left;
+    }
+    .hero-section h1 {
+         font-size: 5rem; /* text-8xl */
+    }
+
+    .about-section .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonies-section .grid-container {
+         grid-template-columns: repeat(3, 1fr);
+    }
+     .job-listing .apply-button {
+        margin-top: 0;
+    }
+}
+
+.home-section img {
+    width: 50%;
+    height: auto; 
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home-section img:hover {
+    opacity: 1;
+    transform: scale(1.03); 
+}
